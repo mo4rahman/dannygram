@@ -2,9 +2,10 @@ const express = require("express");
 const app = express();
 const PORT = 4000;
 
+// Routes
 // Home Page Route
 app.get("/", (req, res) => {
-    console.log("Home Route")
+  console.log("Home Route");
   res.send("IS THIS WORKING?!?!?");
 });
 
