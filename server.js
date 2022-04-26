@@ -4,6 +4,7 @@ const PORT = 4000;
 
 // Routes
 // Home Page Route
+// Working on project directory
 app.get("/", (req, res) => {
   console.log("Home Route");
   res.send("IS THIS WORKING?!?!?");
