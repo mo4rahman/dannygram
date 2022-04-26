@@ -45,4 +45,3 @@
 - have a page with all posts from a specific user
 - Ability to edit username and have that changed with all posts that have the same username (have to update the database as well)
 - User authentication, once authenticated, will only have the ability to edit, create, and delete if logged in to that specific username.
-- 
