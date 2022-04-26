@@ -31,3 +31,18 @@
 	-Array of comments (all strings)
 	- Username of the person who posted it (Somehow associated to USER)
 ![schema](https://user-images.githubusercontent.com/68241119/165347500-67ae1d82-fabc-49cb-937e-e41caf306347.png)
+
+## MVP
+- Like Posts
+- Comment on posts
+- add new post
+- edit post
+- delete post
+- have a dedicated page for a specific post
+- nav bar with home route and new post button
+
+## Stretch Goals
+- have a page with all posts from a specific user
+- Ability to edit username and have that changed with all posts that have the same username (have to update the database as well)
+- User authentication, once authenticated, will only have the ability to edit, create, and delete if logged in to that specific username.
+- 
