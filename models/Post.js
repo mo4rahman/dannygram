@@ -25,6 +25,7 @@ const postSchema = new mongoose.Schema(
     },
     caption: {
       type: String,
+      default: "I love Danny DeVito",
     },
     comments: [
       {

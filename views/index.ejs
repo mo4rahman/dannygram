@@ -18,9 +18,11 @@
                 <% for(let idx=0; idx < posts.length; idx++){ %>
                     <% const post=posts[idx] %>
                         <div>
+                            <h3><a href="/posts/<%= post._id %>"><%= post.username %></a></h3>
                             <img class="card-image" src="<%= post.image %>" alt="Placeholder image" />
                             <div class>
-                                <h3><a href="/posts/<%= post._id %>"><%= post.username %></a></h3>
+                                <h3>Caption: <%= post.caption %> </h3>
+                                
                             <!-- <p>$<%= post.price %> -->
                             <!-- add a delete form here  -->
                             <div>
