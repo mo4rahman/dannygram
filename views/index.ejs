@@ -18,12 +18,12 @@
                         <div>
                             <img class="card-image" src="<%= post.image %>" alt="Placeholder image" />
                             <div class>
-                                <h3><a href="/products/<%= post._id %>"><%= post.caption %></a></h3>
+                                <h3><a href="/posts/<%= post._id %>"><%= post.caption %></a></h3>
                             <p>$<%= post.username %>
                             <!-- add a delete form here  -->
                             <div>
-                                <form method="POST" action="/products/<%= product._id %>?_method=DELETE">            <!-- "/products/0?_method=DELETE" -->
-                                    <input type="submit" value="Delete Product"/>
+                                <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">            <!-- "/posts/0?_method=DELETE" -->
+                                    <input type="submit" value="Delete Post"/>
                                 </form>
                             </div>
                         </p>

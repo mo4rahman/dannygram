@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', { pageName: "edit page" }) %>
+<body>
+    <%- include('partials/nav.ejs')%>
+    <h1>Edit Page | <%= post.name%></h1>
+    <div>
+        <form method="POST" action="/posts/<%= post._id %>?_method=PUT">
+            <div>
+                <label>Post name</label>
+                <input type="text" name="name" value="<%= post.name%>"/>
+            </div>
+            <div>
+                <label>Post price</label>
+                <input type="number" name="price" value="<%= post.price%>"/>
+            </div>
+            <div>
+                <label>Post image</label>
+                <input type="text" name="image" value="<%= post.image%>"/>
+            </div>
+            <div>
+                <input type="submit" value="Edit Post: <%= post.name%>"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

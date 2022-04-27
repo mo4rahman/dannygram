@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs', { pageName: onePost.name }) %>
+  <body>
+    <%- include('partials/nav.ejs')%>
+    <h1>Show Page</h1>
+    <p><%= message %></p>
+    <!-- post object referenced by onePost -->
+    <h2><%= onePost.name %></h2>
+    <small><%= onePost.price %></small>
+    <img class="show-image" src="<%=onePost.image%>" alt="<%=onePost.name %>" />
+    <div>
+      <a href="/posts/<%= onePost._id %>/edit">Edit <%= onePost.name %></a>
+    </div>
+  </body>
+</html>
