@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+    <%- include('partials/head.ejs',{ pageName :  "Home of all things Danny DeVito" }) %>
 
 
 <body>
+    <%- include('partials/nav.ejs')%>
 
     <section>
         <div>
@@ -18,8 +20,8 @@
                         <div>
                             <img class="card-image" src="<%= post.image %>" alt="Placeholder image" />
                             <div class>
-                                <h3><a href="/posts/<%= post._id %>"><%= post.caption %></a></h3>
-                            <p>$<%= post.username %>
+                                <h3><a href="/posts/<%= post._id %>"><%= post.name %></a></h3>
+                            <p>$<%= post.price %>
                             <!-- add a delete form here  -->
                             <div>
                                 <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">            <!-- "/posts/0?_method=DELETE" -->
