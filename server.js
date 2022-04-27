@@ -1,4 +1,6 @@
 const express = require("express");
+// db connection
+require("./config/db.connection");
 const app = express();
 const PORT = 4000;
 const methodOverride = require("method-override");
