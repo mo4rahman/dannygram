@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="../../scripts/app.js" defer></script>
     <%- include('partials/head.ejs',{ pageName :  "Home of all things Danny DeVito" }) %>
-
 
 <body>
     <%- include('partials/nav.ejs')%>
@@ -21,6 +21,10 @@
                             <h3><a href="/posts/<%= post._id %>"><%= post.username %></a></h3>
                             <img class="card-image" src="<%= post.image %>" alt="Placeholder image" />
                             <div class>
+                            <button id="likeBtn">Like this picture</button>
+                             
+
+                                <h3 id="likes">Likes:  </h3>
                                 <h3>Caption: <%= post.caption %> </h3>
                                 <h3>Comments: <br> <%= post.comments %> </h3>
 

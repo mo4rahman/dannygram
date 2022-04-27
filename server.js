@@ -15,7 +15,9 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: false }));
-app.use("/posts", controllers.posts); // "products" router
+app.use("/posts", controllers.posts); // "posts" router
+app.use("/comments", controllers.comments); // "comments" router
+
 
 // Routes
 // Home Page Route
