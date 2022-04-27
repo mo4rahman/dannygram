@@ -20,7 +20,7 @@ app.use("/posts", controllers.posts); // "products" router
 // Routes
 // Home Page Route
 app.get("/", (req, res) => {
-  res.send("Welcome to dannygram ❤️");
+  res.redirect("/posts");
 });
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));

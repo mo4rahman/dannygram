@@ -8,7 +8,7 @@
 
     <section>
         <div>
-            <h2 class="title">All Posts</h2>
+            <h2 class="title">Welcome to dannygram ❤️</h2>
         </div>
     </section>
 
@@ -20,8 +20,8 @@
                         <div>
                             <img class="card-image" src="<%= post.image %>" alt="Placeholder image" />
                             <div class>
-                                <h3><a href="/posts/<%= post._id %>"><%= post.name %></a></h3>
-                            <p>$<%= post.price %>
+                                <h3><a href="/posts/<%= post._id %>"><%= post.username %></a></h3>
+                            <!-- <p>$<%= post.price %> -->
                             <!-- add a delete form here  -->
                             <div>
                                 <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">            <!-- "/posts/0?_method=DELETE" -->
