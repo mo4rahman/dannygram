@@ -27,11 +27,6 @@ const postSchema = new mongoose.Schema(
       type: String,
       default: "I love Danny DeVito",
     },
-    comments: [
-      {
-        type: String,
-      },
-    ],
     // user: {
     //   type: mongoose.Types.ObjectId,
     //   ref: "User",

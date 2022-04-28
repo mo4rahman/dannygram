@@ -20,14 +20,14 @@
             <h3>Add a comment:</h3>
             <!-- form here -->
             <form method="POST" action="/comments">
-                <input name="content" type="text" />
-                <input type="hidden" name="product" value="<%=onePost.id%>"/>
+                <input name="comment" type="text" />
+                <input type="hidden" name="post" value="<%=onePost.id%>"/>
                 <input type="submit" value="Share your thoughts..."/>
             </form>
         </div>
         <% for(let i=0;i<comments.length;i++){ %>
             <div>
-                <p><%=comments[i].content %></p>
+                <p><%=comments[i].comment %></p>
             </div>
         <%}%>
     </section>
