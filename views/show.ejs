@@ -3,8 +3,7 @@
   <%- include('partials/head.ejs', { pageName: onePost.name }) %>
   <body>
     <%- include('partials/nav.ejs')%>
-    <h1>Show Page</h1>
-    <p><%= message %></p>
+    <h1><%= onePost.username %> Profile </h1>
     <!-- post object referenced by onePost -->
     <h2><%= onePost.name %></h2>
     <small><%= onePost.price %></small>
@@ -15,7 +14,6 @@
 
 
     <section>
-        <h2>Comments Below</h2>
         <div>
             <h3>Add a comment:</h3>
             <!-- form here -->

@@ -18,10 +18,6 @@
                 <% for(let idx=0; idx < posts.length; idx++){ %>
                     <% const post=posts[idx] %>
                     <% const postId=JSON.stringify(posts[idx]._id) %>
-                    <p><%=  //typeof JSON.stringify(postId) %></p>
-
-
-                    <p><%= postId %></p> 
 
                         <div>
                             <h3><a href="/posts/<%= post._id %>"><%= post.username %></a></h3>
@@ -32,8 +28,8 @@
 
                                 <h3 id="likes">Likes:  </h3>
                                 <h3>Caption: <%= post.caption %> </h3>
-                                <h3>Comments: </h3> <br>
-                                <p><%= //comments %> </p>
+                                <h3>Comments: </h3>
+
                                 <%for (i=0; i< comments.length; i++){%>
                                     <% if (JSON.stringify(comments[i].post) === postId){ %> 
                                     <p><%= comments[i].comment%> </p>

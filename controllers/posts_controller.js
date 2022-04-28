@@ -138,7 +138,7 @@ router.put("/:id", async (req, res, next) => {
       req.body
     );
     // console.log(updatedPost);
-    return res.redirect(`/posts`);
+    return res.redirect(`/posts/${req.params.id}`);
   } catch (error) {
     console.log(error);
     req.error = error;
