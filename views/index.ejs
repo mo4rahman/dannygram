@@ -15,13 +15,16 @@
         <div>
             <div>
                 <!-- FIXME: Posts are in order from  -->
-                <% for(let idx=0; idx < posts.length; idx++){ %>
+                <% for(let idx=posts.length-1; idx >= 0; idx--){ %>
                     <% const post=posts[idx] %>
                     <% const postId=JSON.stringify(posts[idx]._id) %>
+                    <p><%= posts[idx]._id.getTimestamp() %> </p>
 
                         <div>
                             <h3><a href="/posts/<%= post._id %>"><%= post.username %></a></h3>
-                            <img class="card-image" src="<%= post.image %>" alt="Placeholder image" />
+                            <h3><a href="/posts/<%= post._id %>"><img class="card-image" src="<%= post.image %>" alt="Placeholder image" /></a></h3>
+
+                            
                             <div class>
                             <button id="likeBtn">Like this picture</button>
                              
