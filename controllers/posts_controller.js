@@ -25,11 +25,13 @@ const db = require("../models");
 
 /*  Beginning of Post routes */
 
-// get all posts route
+// get all posts route (index)
 router.get("/", async (req, res, next) => {
   try {
     const posts = await db.Post.find({});
-    const context = { posts };
+    const allComments = await db.Comment.find({});
+
+    const context = { posts, comments: allComments };
     // console.log(posts);
     return res.render("index.ejs", context);
   } catch (error) {
@@ -52,7 +54,7 @@ router.get("/:id/", async (req, res, next) => {
   try {
     const foundPost = await db.Post.findById(req.params.id);
     const allComments = await db.Comment.find({ post: req.params.id });
-    console.log(allComments[0], 'Comment Found');
+    console.log(allComments[0], "Comment Found");
     const context = {
       onePost: foundPost,
       comments: allComments,

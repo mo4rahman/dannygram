@@ -14,8 +14,15 @@
     <main class="container">
         <div>
             <div>
+                <!-- FIXME: Posts are in order from  -->
                 <% for(let idx=0; idx < posts.length; idx++){ %>
                     <% const post=posts[idx] %>
+                    <% const postId=JSON.stringify(posts[idx]._id) %>
+                    <p><%=  //typeof JSON.stringify(postId) %></p>
+
+
+                    <p><%= postId %></p> 
+
                         <div>
                             <h3><a href="/posts/<%= post._id %>"><%= post.username %></a></h3>
                             <img class="card-image" src="<%= post.image %>" alt="Placeholder image" />
@@ -25,10 +32,15 @@
 
                                 <h3 id="likes">Likes:  </h3>
                                 <h3>Caption: <%= post.caption %> </h3>
-                                <h3>Comments: <br> <%= post.comments %> </h3>
-
+                                <h3>Comments: </h3> <br>
+                                <p><%= //comments %> </p>
+                                <%for (i=0; i< comments.length; i++){%>
+                                    <% if (JSON.stringify(comments[i].post) === postId){ %> 
+                                    <p><%= comments[i].comment%> </p>
+                                    <%}%>
+                                <%}%>
                                 
-                            <!-- <p>$<%= post.price %> -->
+                                
                             <!-- add a delete form here  -->
                             <div>
                                 <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">            <!-- "/posts/0?_method=DELETE" -->
