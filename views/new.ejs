@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs') %>
+
+  <body>
+    <h1>New Post</h1>
+    <form method="POST" action="/posts">
+      <!-- method => POST - attach the data to post body rather than in the url query string(GET request) -->
+      <!-- action => destination for the post req -->
+      <div>
+        <label for="username"> Post Username: </label>
+        <input id="username" name="username" type="text" />
+      </div>
+      <!-- <div>
+                <label for="price"> Post Price: </label>
+                <input id="price" name="price" type="number" />
+            </div> -->
+      <div>
+        <label for="image"> Post Image(url): </label>
+        <input id="image" name="image" type="text" />
+      </div>
+      <div>
+        <label for="caption"> Caption: </label>
+        <input id="caption" name="caption" type="text" />
+      </div>
+      <div>
+        <label for="comments"> Comments: </label>
+        <input id="comments" name="comments" type="text" />
+      </div>
+      <input type="submit" value="Create new post" />
+    </form>
+  </body>
+</html>
