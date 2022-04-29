@@ -5,6 +5,7 @@
     text-align: center;
     color: white;
     font-size: 30px;
+    padding-top: 40px;
 }
 
 body {
@@ -29,8 +30,14 @@ body {
 .nav-wrapper{
     width: 70%;
     max-width: 1000px;
-    height: 50%;
+    height: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.home, .add {
+    height: 20px;
+    width: 20px;
+    justify-content: space-between;
 }
