@@ -7,15 +7,13 @@
 
     <section>
         <div>
-            <h2 class="title">Welcome to dannygram ❤️</h2>
+            <h2 class="title">Dannygram ❤️</h2>
         </div>
     </section>
 
     <main class="container">
         <div>
             <div>
-                <!-- FIXME: Posts are in order from  -->
-                <!-- <p id="post-length"><%= //posts.length %> </p> -->
                 <% for(let idx=posts.length-1; idx >= 0; idx--){ %>
                     <% const post=posts[idx] %>
                     <% const postId=JSON.stringify(posts[idx]._id) %>
