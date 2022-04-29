@@ -15,6 +15,7 @@
         <div>
             <div>
                 <!-- FIXME: Posts are in order from  -->
+                <!-- <p id="post-length"><%= //posts.length %> </p> -->
                 <% for(let idx=posts.length-1; idx >= 0; idx--){ %>
                     <% const post=posts[idx] %>
                     <% const postId=JSON.stringify(posts[idx]._id) %>
@@ -26,10 +27,10 @@
 
                             
                             <div class>
-                            <button id="likeBtn">Like this picture</button>
+                            <button class="btn" id=<%= `likeBtn${idx}` %> >Like this picture</button>
                              
 
-                                <h3 id="likes">Likes:  </h3>
+                                <h3 id=<%= `likes${idx}` %> >Likes:  </h3>
                                 <h3>Caption: <%= post.caption %> </h3>
                                 <h3>Comments: </h3>
 
