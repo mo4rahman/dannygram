@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('partials/head.ejs', { pageName: onePost.name }) %>
-  <body>
+  <body class="show-page-body">
     <%- include('partials/nav.ejs')%>
-    <h1><%= onePost.username %> Profile </h1>
-    <!-- post object referenced by onePost -->
-    <h2><%= onePost.name %></h2>
-    <small><%= onePost.price %></small>
-    <img class="show-image" src="<%=onePost.image%>" alt="<%=onePost.name %>" />
+    <h1><%= onePost.username %> </h1>
     <div>
       <a href="/posts/<%= onePost._id %>/edit">Edit <%= onePost.name %></a>
     </div>
-
-
+    <h2><%= onePost.name %></h2>
+    <small><%= onePost.price %></small>
+    <img class="show-image" src="<%=onePost.image%>" alt="<%=onePost.name %>" />
+    <br></br>
     <section>
-        <div>
-            <h3>Add a comment:</h3>
-            <!-- form here -->
+        <div class="show-comment">
             <form method="POST" action="/comments">
                 <input name="comment" type="text" />
                 <input type="hidden" name="post" value="<%=onePost.id%>"/>

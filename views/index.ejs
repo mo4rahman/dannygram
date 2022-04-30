@@ -5,44 +5,50 @@
 <body>
     <%- include('partials/nav.ejs')%>
 
-
-    <main class="container">
-        <div>
-            <div>
-                <% for(let idx=posts.length-1; idx >= 0; idx--){ %>
-                    <% const post=posts[idx] %>
-                    <% const postId=JSON.stringify(posts[idx]._id) %>
-
-                        <div class="post-body">
-                            <h3><a href="/posts/<%= post._id %>"><%= post.username %></a></h3>
-                            <h3><a href="/posts/<%= post._id %>"><img class="card-image" src="<%= post.image %>" alt="Placeholder image" /></a></h3>
-
-                            
-                            <div class>
-                            <button class="like-btn" id=<%= `likeBtn${idx}` %> >Like this picture</button>
-                             
-                                
-                                <h3 id=<%= `likes${idx}` %> >Likes:  </h3>
-                                <h3>Caption: <%= post.caption %> </h3>
-                                <h3>Comments: </h3>
-
-                                <%for (i=0; i< comments.length; i++){%>
-                                    <% if (JSON.stringify(comments[i].post) === postId){ %> 
-                                    <p><%= comments[i].comment%> </p>
-                                    <%}%>
-                                <%}%>
-                            <div>
-                                <form class="delete" method="POST" action="/posts/<%= post._id %>?_method=DELETE">            
-                                    <input type="submit" value="Delete Post"/>
-                                </form>
-                                <p><%= posts[idx]._id.getTimestamp() %> </p>
-                            </div>
-                        </p>
+    <section class="main">
+        <div class="wrapper">
+            <div class="left-col">
+                <div class="post">
+                    <div class="user">
+                        <div>
+                            <% for(let idx=posts.length-1; idx >= 0; idx--){ %>
+                                <% const post=posts[idx] %>
+                                <% const postId=JSON.stringify(posts[idx]._id) %>
+            
+                                    <div>    
+                                        <a href="/posts/<%= post._id %>" class="username"><%= post.username %></a>
+                                       
+                                        <h3><a href="/posts/<%= post._id %>"><img class="card-image" src="<%= post.image %>" alt="Placeholder image" /></a></h3>
+                                        <form class="delete" method="POST" action="/posts/<%= post._id %>?_method=DELETE">            
+                                        <input type="submit" value="delete"/>
+                                        </form>
+                                       
+                                        <button class="btn" id=<%= `likeBtn${idx}` %> >Like this picture</button>
+                                         
+            
+                                         <div class="caption-items">   <h3 id=<%= `likes${idx}` %> >Likes:  </h3>
+                                            <h3>Caption: <%= post.caption %> </h3>
+                                            <h3>Comments: </h3>
+            
+                                            <%for (i=0; i< comments.length; i++){%>
+                                                <% if (JSON.stringify(comments[i].post) === postId){ %> 
+                                                <p><%= comments[i].comment%> </p>
+                                                <%}%>
+                                            <%}%>
+                            <% } %>
+                        </div>
                     </div>
-                <% } %>
+                    </div> 
+                    </div>
+                
+                </div>
+              
+            </div>
+            <div class="right-col">
             </div>
         </div>
+    </section>
+            
     </main>
 </body>
-
 </html>

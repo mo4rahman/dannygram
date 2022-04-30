@@ -4,31 +4,36 @@
   <%- include('partials/nav.ejs') %>
 
   <body>
-    <h1>New Post</h1>
+    <h1 class="new">New Post</h1>
+
+    <div class="new-body">
     <form method="POST" action="/posts">
-      <!-- method => POST - attach the data to post body rather than in the url query string(GET request) -->
-      <!-- action => destination for the post req -->
+      
+      <div class="new-info">
+        <label for="username"></label>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">@</span>
+          <input id="username" name="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        </div>
+        <br></br>
       <div>
-        <label for="username"> Post Username: </label>
-        <input id="username" name="username" type="text" />
+        <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Image</span>
+        <input id="image" name="image" type="text" class="form-control" placeholder="(URL)" aria-label="Username" aria-describedby="addon-wrapping">
+       </div>
       </div>
-      <!-- <div>
-                <label for="price"> Post Price: </label>
-                <input id="price" name="price" type="number" />
-            </div> -->
+      <br></br>
       <div>
-        <label for="image"> Post Image(url): </label>
-        <input id="image" name="image" type="text" />
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">Caption</span>
+          <input id="caption" name="caption" type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping">
+        
       </div>
-      <div>
-        <label for="caption"> Caption: </label>
-        <input id="caption" name="caption" type="text" />
       </div>
-      <div>
-        <label for="comments"> Comments: </label>
-        <input id="comments" name="comments" type="text" />
-      </div>
-      <input type="submit" value="Create new post" />
+      <br></br>
+      <br><input class="create-new-post" type="submit" value="Create new post" /></br>
     </form>
+    </div>
   </body>
 </html>
