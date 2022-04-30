@@ -2,7 +2,14 @@
 <html lang="en">
   <%- include('partials/head.ejs', { pageName: onePost.name }) %>
   <body class="show-page-body">
+    
     <%- include('partials/nav.ejs')%>
+    <section class="main">
+      <div class="wrapper">
+          <div class="left-col">
+              <div class="post">
+                  <div class="user">
+                    <div>
     <h1><%= onePost.username %> </h1>
     <div>
       <a href="/posts/<%= onePost._id %>/edit">Edit <%= onePost.name %></a>
@@ -26,6 +33,11 @@
             </div>
         <%}%>
     </section>
-
+                  </div>
+                  
+              </div>
+          </div>
+          </div>
+    </section>
   </body>
 </html>

@@ -25,28 +25,28 @@
                                        
                                         <form method="POST" action="/posts/<%= post._id %>?_method=PUT">
                                             <div>
-                                                <label>Post username</label>
+                                               
                                                 <input type="hidden" name="username" value="<%= post.username%>" />
                                               </div>
                                               <div>
-                                                <label>Post caption</label>
+                                                
                                                 <input type="hidden" name="caption" value="<%= post.caption%>" />
                                               </div>
                                               <div>
-                                                <label>Post image</label>
+                                                
                                                 <input type="hidden" name="image" value="<%= post.image%>" />
                                               </div>
-                                              <div>
+                                              <div class="like-button">
                                                 
                                                 <input type="submit" value="♡" class="btn btn-dark" id=<%= `like-btn${idx}`
                                                 %> />
-                                                <input type="text" name="likes" id=<%= `like-display${idx}` %> value="<%= post.likes %>">
+                                                <input class="likes" type="text" name="likes" id=<%= `like-display${idx}` %> value="<%= post.likes %>">
                                               </div>
                                         
                                                     </form>
                                          
             
-                                         <div class="caption-items">   <h3 id=<%= `likes${idx}` %> >Likes:  </h3>
+                                            <h3 id=<%= `likes${idx}` %>   </h3>
                                             <h3>Caption: <%= post.caption %> </h3>
                                             <h3>Comments: </h3>
             
@@ -56,7 +56,7 @@
                                                 <%}%>
                                             <%}%>
                             <% } %>
-                        </div>
+                        
                     </div>
                     </div> 
                     </div>

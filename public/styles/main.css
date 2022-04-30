@@ -98,6 +98,7 @@
     font-size: 18px;
     margin-left: 5px;
     text-decoration: none;
+    padding-top: 20px;
 }
 
 .caption-items {
@@ -106,4 +107,57 @@
     font-size: 14px;
 }
 
+.likes{
+    border: none;
+}
 
+
+.delete {
+    position: relative;
+    left: 930px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Oleo Script';
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+.new {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 90px;
+    font-family: 'Oleo Script', cursive;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-new-post {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:10px solid;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oleo Script';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 0 5px;
+}
+
+.new-danny{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
