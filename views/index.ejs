@@ -19,10 +19,31 @@
 
                             
                             <div class>
-                            <button class="like-btn" id=<%= `likeBtn${idx}` %> >Like this picture</button>
-                             
+                               
+                                <form method="POST" action="/posts/<%= post._id %>?_method=PUT">
+                                    <div>
+                                        <label>Post username</label>
+                                        <input type="hidden" name="username" value="<%= post.username%>" />
+                                      </div>
+                                      <div>
+                                        <label>Post caption</label>
+                                        <input type="hidden" name="caption" value="<%= post.caption%>" />
+                                      </div>
+                                      <div>
+                                        <label>Post image</label>
+                                        <input type="hidden" name="image" value="<%= post.image%>" />
+                                      </div>
+                                      <div>
+                                        
+                                        <input type="submit" value="Like this post!" class="btn btn-dark" id=<%= `like-btn${idx}`
+                                        %> />
+                                        <input type="text" name="likes" id=<%= `like-display${idx}` %> value="<%= post.likes %>">
+                                      </div>
+                                      <!-- <div><button type="button" class="btn btn-dark" id=<%=// `likeBtn${idx}`
+                                        %>>♡</button></div> -->
                                 
-                                <h3 id=<%= `likes${idx}` %> >Likes:  </h3>
+                                            </form>
+                                
                                 <h3>Caption: <%= post.caption %> </h3>
                                 <h3>Comments: </h3>
 

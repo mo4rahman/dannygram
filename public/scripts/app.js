@@ -1,16 +1,21 @@
-// const allLikeBtns = document.querySelectorAll(".btn");
-// const likeBtn = document.querySelector("#likeBtn");
-// let postsLength = parseInt(document.querySelector("#post-length").innerHTML);
-// console.log(postsLength)
-// // console.log(likeBtn.id);
-// console.log("SCRIPT IS RUNNING");
-// const likesDisplay = document.querySelector("#likes");
-// let likesCount = 0;
-// for (let idx=postsLength-1; idx >=0; idx--){
+const allLikeBtns = document.querySelectorAll(".btn.btn-dark");
+console.log(allLikeBtns);
+console.log("SCRIPT IS RUNNING");
 
-// }
-// likeBtn.addEventListener("click", () => {
-//   console.log("clicked");
-//   likesCount++;
-//   likesDisplay.innerHTML = `${likesCount}`;
-// });
+
+for (let eachLikeBtn of allLikeBtns) {
+  eachLikeBtn.addEventListener("click", function (event) {
+    // event.preventDefault();
+    console.log("clicked");
+
+    document.querySelector(`#like-display${eachLikeBtn.id.slice(-1)}`).value =
+      parseInt(
+        document.querySelector(`#like-display${eachLikeBtn.id.slice(-1)}`).value
+      ) + 1;
+    console.log(
+      document.querySelector(`#like-display${eachLikeBtn.id.slice(-1)}`).value
+    );
+    // eachLikeBtn.submit();
+  });
+}
+

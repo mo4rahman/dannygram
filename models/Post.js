@@ -14,9 +14,9 @@ const postSchema = new mongoose.Schema(
       required: true,
     },
     likes: {
-      type: Number,
-      min: 0,
-      default: 0,
+      type: String,
+      // min: 0,
+      default: "0",
       required: true,
     },
     image: {
