@@ -51,13 +51,6 @@
     display: inline-block; 
 }
 
-/* .user-profile{
-    width: 25px;
-    border-radius: 50%;
-    background-image: url(https://i.imgur.com/cZNrBtv.jpg);
-    background-size: cover;
-} */
-
 .main{
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,186,45,1) 100%);
@@ -160,4 +153,43 @@
     justify-content: center;
     padding: 50px;
 
+}
+
+.show {
+    padding-top: 100px;
+}
+
+.edit {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 100px;
+    font-family: 'Oleo Script', cursive;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-post {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:10px solid;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oleo Script';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 0 5px;
+}
+
+.edit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
 }
