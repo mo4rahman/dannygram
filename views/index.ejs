@@ -18,7 +18,7 @@
                                        
                                         <h3><a href="/posts/<%= post._id %>"><img class="card-image" src="<%= post.image %>" alt="Placeholder image" /></a></h3>
                                         <form class="delete" method="POST" action="/posts/<%= post._id %>?_method=DELETE">            
-                                        <input type="submit" value="delete"/>
+                                        <input type="submit" value="delete photo"/>
                                         </form>
                                        
                                         <form method="POST" action="/posts/<%= post._id %>?_method=PUT">
@@ -26,7 +26,7 @@
                                                
                                                 <input type="hidden" name="username" value="<%= post.username%>" />
                                               </div>
-                                              <div>
+                                              <div class="cap-com">
                                                 
                                                 <input type="hidden" name="caption" value="<%= post.caption%>" />
                                               </div>
@@ -43,7 +43,7 @@
                                         
                                                     </form>
                                          
-            
+                                            <div class="cap-com">
                                             <h3 id=<%= `likes${idx}` %>   </h3>
                                             <h3>Caption: <%= post.caption %> </h3>
                                             <h3>Comments: </h3>
@@ -54,7 +54,7 @@
                                                 <%}%>
                                             <%}%>
                             <% } %>
-                        
+                        </div>
                     </div>
                     </div> 
                     </div>
