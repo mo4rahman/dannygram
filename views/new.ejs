@@ -4,36 +4,46 @@
   <%- include('partials/nav.ejs') %>
 
   <body>
-    <h1 class="new">New Post</h1>
-
-    <div class="new-body">
-    <form method="POST" action="/posts">
-      
-      <div class="new-info">
-        <label for="username"></label>
-        <div class="input-group flex-nowrap">
-          <span class="input-group-text" id="addon-wrapping">@</span>
-          <input id="username" name="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+    <div class="container">
+      <div class="row">
+        <div class="col">
         </div>
-        </div>
-        <br></br>
-      <div>
-        <div class="input-group flex-nowrap">
-        <span class="input-group-text" id="addon-wrapping">Image</span>
-        <input id="image" name="image" type="text" class="form-control" placeholder="(URL)" aria-label="Username" aria-describedby="addon-wrapping">
-       </div>
-      </div>
-      <br></br>
-      <div>
-        <div class="input-group flex-nowrap">
-          <span class="input-group-text" id="addon-wrapping">Caption</span>
-          <input id="caption" name="caption" type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping">
+        <div class="col-6">
+          <div class="new-body">
+            <h1 class="new">New Post</h1>
         
+            <form method="POST" action="/posts">
+              
+              <div class="new-info">
+                <label for="username"></label>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input id="username" name="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                </div>
+                <br></br>
+              <div>
+                <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Image</span>
+                <input id="image" name="image" type="text" class="form-control" placeholder="(URL)" aria-label="Username" aria-describedby="addon-wrapping">
+               </div>
+              </div>
+              <br></br>
+              <div>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">Caption</span>
+                  <input id="caption" name="caption" type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              </div>
+              <div class="new-danny">
+              <br><input class="create-new-post" type="submit" value="Create new Danny" /></br>
+            </form>
+          </div>
+            </div>
+        </div>
+        <div class="col">
+        </div>
       </div>
-      </div>
-      <br></br>
-      <br><input class="create-new-post" type="submit" value="Create new post" /></br>
-    </form>
-    </div>
+    
   </body>
 </html>

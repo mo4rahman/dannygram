@@ -51,13 +51,6 @@
     display: inline-block; 
 }
 
-/* .user-profile{
-    width: 25px;
-    border-radius: 50%;
-    background-image: url(https://i.imgur.com/cZNrBtv.jpg);
-    background-size: cover;
-} */
-
 .main{
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,186,45,1) 100%);
@@ -89,13 +82,14 @@
 .card-image {
     width: 100%;
     height: 100%;
+    padding-top: 10px;
 }
 
 .username {
     width: auto;
     font-weight: bold;
-    color: black;
-    font-size: 18px;
+    color: darkorange;
+    font-size: 15px;
     margin-left: 5px;
     text-decoration: none;
 }
@@ -106,4 +100,164 @@
     font-size: 14px;
 }
 
+.likes{
+    border: none;
+}
+
+
+.delete {
+    position: relative;
+    left: 930px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Oleo Script';
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+.new {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 90px;
+    font-family: 'Oleo Script', cursive;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-new-post {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:10px solid;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oleo Script';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 0 5px;
+}
+
+.new-danny{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.show {
+    padding-top: 100px;
+}
+
+.edit {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 100px;
+    font-family: 'Oleo Script', cursive;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-post {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:10px solid;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oleo Script';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 0 5px;
+}
+
+.edit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.cap-com {
+    font-size: 20px;
+    font-family: 'Oleo Script';
+}
+
+.show-image {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.leave-comment{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:10px solid;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oleo Script';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 0 5px;
+}
+
+.edit-button-show{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:10px solid;
+    background: -webkit-linear-gradient(black, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oleo Script';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.profile-head {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:10px solid;
+    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oleo Script';
+    font-size: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 

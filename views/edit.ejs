@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('partials/head.ejs', { pageName: "edit page" }) %>
+  <%- include('partials/nav.ejs')%>
   <body>
-    <%- include('partials/nav.ejs')%>
-    <h1>Edit Page | <%= post.username%></h1>
-    <div>
-      <form method="POST" action="/posts/<%= post._id %>?_method=PUT">
-        <div>
-          <label>Post username</label>
-          <input type="text" name="username" value="<%= post.username%>" />
+    <div class="edit-container">
+        <div class="row">
+          <div class="col">
+            
+          </div>
+          <div class="col-6">
+            <div>
+              <h1 class="edit"><%= post.username%> | Edit Page</h1>
+              <br></br>
+              <form method="POST" action="/posts/<%= post._id %>?_method=PUT"/>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="text" name="username" class="form-control" placeholder="New Username" aria-label="Username" aria-describedby="addon-wrapping" value="<%= post.username%>">
+                </div>
+                <br></br>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">Image</span>
+                  <input type="text" class="form-control" placeholder="(URL)" aria-label="Username" aria-describedby="addon-wrapping" name="image" value="<%= post.image%>">
+                </div>
+                <br></br>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">Caption</span>
+                  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" name="caption" value="<%= post.caption%>">
+                </div>
+                <br></br>
+                <div>
+                <div class="edit-button">
+                  <input class="edit-post" type="submit" value="Edit Post: <%= post.username%>" />
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+            
+          </div>
         </div>
-        <div>
-          <label>Post caption</label>
-          <input type="text" name="caption" value="<%= post.caption%>" />
-        </div>
-        <div>
-          <label>Post image</label>
-          <input type="text" name="image" value="<%= post.image%>" />
-        </div>
-        <div>
-        <div>
-          <input type="submit" value="Edit Post: <%= post.username%>" />
-        </div>
-      </form>
-    </div>
+          
   </body>
 </html>
+
+
