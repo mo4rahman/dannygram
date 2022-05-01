@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('partials/head.ejs', { pageName: onePost.name }) %>
-  <body>
-    <%- include('partials/nav.ejs')%>
-    <h1><%= onePost.username %> Profile </h1>
-    <!-- post object referenced by onePost -->
+  <body class="show">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-9">
+          <%- include('partials/nav.ejs')%>
+    <h1 class="profile-head"><%= onePost.username %> profile </h1>
+    <div class="edit-button-show">
+      <a href="/posts/<%= onePost._id %>/edit">Edit <%= onePost.name %></a>
+    </div>
     <h2><%= onePost.name %></h2>
     <small><%= onePost.price %></small>
     <img class="show-image" src="<%=onePost.image%>" alt="<%=onePost.name %>" />
-    <div>
-      <a href="/posts/<%= onePost._id %>/edit">Edit <%= onePost.name %></a>
-    </div>
-
-
+    
+    <br></br>
     <section>
-        <div>
-            <h3>Add a comment:</h3>
-            <!-- form here -->
+        <div class="comments">
             <form method="POST" action="/comments">
                 <input name="comment" type="text" />
                 <input type="hidden" name="post" value="<%=onePost.id%>"/>
-                <input type="submit" value="Comment"/>
-            </form>
+                <input value="Leave a comment" class="leave-comment" type="submit" />
+            </form><br></br>
         </div>
         <% for(let i=0;i<comments.length;i++){ %>
-            <div>
+            <div>               
+              
                 <p><%=comments[i].comment %></p>
                 <p><%= //onePost.id%> </p>
             </div>
         <%}%>
-    </section>
+    </section><br></br>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    
 
   </body>
 </html>
