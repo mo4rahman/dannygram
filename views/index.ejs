@@ -43,14 +43,12 @@
                                         
                                                     </form>
                                          
-                                            <!-- <div class="cap-com"> -->
-                                            <h3 id=<%= `likes${idx}` %>   </h3>
                                             <h3 class="index-username"><%= post.username %> : <%= post.caption %> </h3>
                                             
             
                                             <%for (i=0; i< comments.length; i++){%>
                                                 <% if (JSON.stringify(comments[i].post) === postId){ %> 
-                                                <p class="index-comments"> "<%= comments[i].comment%>" </p>
+                                                <p class="index-comments"> <%= comments[i].comment%> </p>
                                                 <%}%>
                                             <%}%>
                             <% } %>
