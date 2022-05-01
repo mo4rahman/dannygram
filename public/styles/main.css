@@ -1,296 +1,294 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Oleo+Script:wght@700&family=Oswald:wght@500&family=Pacifico&family=Roboto:ital,wght@0,100;0,400;1,100;1,900&family=Rye&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Oleo+Script:wght@700&family=Oswald:wght@500&family=Pacifico&family=Roboto:ital,wght@0,100;0,400;1,100;1,900&family=Rye&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
- body {
-     width: 100%;
-     background: #fafafa;
-     position: relative;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
-
-.navbar{
-    font-family: 'Oleo Script', cursive;
-    font-style: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: #fff;
-    border-bottom: 1px solid #dfdfdf;
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
+body {
+  width: 100%;
+  background: #fafafa;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.nav-wrapper{
-    width: 90%;
-    max-width: 1000px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+.navbar {
+  font-family: "Oleo Script", cursive;
+  font-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.nav-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-items {
-    height: 22px;
-    position: relative;
+  height: 22px;
+  position: relative;
 }
 
-.profile-icon{
-    height: 100%;
-    cursor: pointer;
-    margin: 0 15px;
-    display: inline-block;
-    border-radius: 50%;
-    background-size: cover;
+.profile-icon {
+  height: 100%;
+  cursor: pointer;
+  margin: 0 15px;
+  display: inline-block;
+  border-radius: 50%;
+  background-size: cover;
 }
 
 .icon {
-    height: 100%;
-    cursor: pointer;
-    margin: 0 10px;
-    display: inline-block; 
+  height: 100%;
+  cursor: pointer;
+  margin: 0 10px;
+  display: inline-block;
 }
 
-.main{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,186,45,1) 100%);
-    width: 100%;
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.main {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 186, 45, 1) 100%
+  );
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.wrapper{
-    width: 70%;
-    max-width: 1000px;
-    display: flex;
-    grid-template-columns: 60% 40%;
-    grid-gap: 30px;
-    
-
+.wrapper {
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  grid-template-columns: 60% 40%;
+  grid-gap: 30px;
 }
 
-.post{
-    width: 100%;
-    height: vh;
-    background: #fff;
-    border: 1px solid #dfdfdf;
-    
+.post {
+  width: 100%;
+  height: vh;
+  background: #fff;
+  border: 1px solid #dfdfdf;
 }
 
 .card-image {
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .username {
-    width: auto;
-    font-family: 'Oleo Script';
-    font-weight: bold;
-    color: darkorange;
-    font-size: 18px;
-    margin-left: 5px;
-    text-decoration: none;
+  width: auto;
+  font-family: "Oleo Script";
+  font-weight: bold;
+  color: darkorange;
+  font-size: 18px;
+  margin-left: 5px;
+  text-decoration: none;
 }
 
 .caption-items {
-    font-family: 'Oleo Script', cursive;
-    text-transform: lowercase;
-    font-size: 14px;
+  font-family: "Oleo Script", cursive;
+  text-transform: lowercase;
+  font-size: 14px;
 }
 
-.likes{
-    border: none;
+.likes {
+  border: none;
 }
-
 
 .delete {
-    /* position: relative; */
-    left: 930px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:6px;
-    color: #fff;
-    font-family: 'Oleo Script';
-    font-size: 15px;
-    text-decoration: none;
-    cursor: pointer;
-    border:none;
-    display: flex;
-    align-items: right;
-    justify-content: right;
+  /* position: relative; */
+  left: 930px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Oleo Script";
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: right;
+  justify-content: right;
 }
 
 .new {
-    font-size: 72px;
-    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-top: 90px;
-    font-family: 'Oleo Script', cursive;
-    font-size: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 90px;
+  font-family: "Oleo Script", cursive;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .create-new-post {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:10px solid;
-    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Oleo Script';
-    font-size: 20px;
-    text-decoration: none;
-    cursor: pointer;
-    border:none;
-    padding: 0 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px solid;
+  background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Oleo Script";
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 0 5px;
 }
 
-.new-danny{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-
+.new-danny {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
 }
 
 .show {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .edit {
-    font-size: 72px;
-    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-top: 100px;
-    font-family: 'Oleo Script', cursive;
-    font-size: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 100px;
+  font-family: "Oleo Script", cursive;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .edit-post {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:10px solid;
-    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Oleo Script';
-    font-size: 20px;
-    text-decoration: none;
-    cursor: pointer;
-    border:none;
-    padding: 0 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px solid;
+  background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Oleo Script";
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 0 5px;
 }
 
-.edit-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
+.edit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
 }
 
 .cap-com {
-    font-size: 20px;
-    font-family: 'oswald';
+  font-size: 20px;
+  font-family: "oswald";
 }
 
 .show-image {
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
 }
 
-.leave-comment{
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:10px solid;
-    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Oleo Script';
-    font-size: 20px;
-    text-decoration: none;
-    cursor: pointer;
-    border:none;
-    padding: 0 5px;
+.leave-comment {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px solid;
+  background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Oleo Script";
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 0 5px;
 }
 
-.edit-button-show{
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:10px solid;
-    background: -webkit-linear-gradient(black, #fdba2d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Neue Helvetica';
-    font-size: 20px;
-    text-decoration: none;
-    cursor: pointer;
-    border:none;
-    display: flex;
-    align-items: right;
-    justify-content: right;
+.edit-button-show {
+    /* FIXME: edit button hidden in the page */
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px solid;
+  /* background: -webkit-linear-gradient(black, #fdba2d); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Neue Helvetica";
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: right;
+  justify-content: right;
 }
 
 .profile-head {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:10px solid;
-    background: -webkit-linear-gradient(#22c1c3, #fdba2d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Oleo Script';
-    font-size: 50px;
-    text-decoration: none;
-    cursor: pointer;
-    border:none;
-    padding: 0 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px solid;
+  background: -webkit-linear-gradient(#22c1c3, #fdba2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Oleo Script";
+  font-size: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .comments {
-    display: flex;
-    align-items: left;
-    justify-content: left;
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 
-.index-username{
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Neue Helvetica';
+.index-username {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Neue Helvetica";
 }
 
-.index-comments{
-    font-size: 18px;
-    font-family: 'Neue Helvetica';
+.index-comments {
+  font-size: 18px;
+  font-family: "Neue Helvetica";
 }
 
 .show-comments {
-    font-size: 18px;
-    font-family: 'Neue Helvetica';
-    font-weight: bold;
+  font-size: 18px;
+  font-family: "Neue Helvetica";
+  font-weight: bold;
 }
-
