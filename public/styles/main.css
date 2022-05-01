@@ -30,7 +30,7 @@
 }
 
 .nav-wrapper{
-    width: 70%;
+    width: 90%;
     max-width: 1000px;
     height: 100%;
     display: flex;
@@ -42,6 +42,15 @@
 .nav-items {
     height: 22px;
     position: relative;
+}
+
+.profile-icon{
+    height: 100%;
+    cursor: pointer;
+    margin: 0 15px;
+    display: inline-block;
+    border-radius: 50%;
+    background-size: cover;
 }
 
 .icon {
@@ -83,13 +92,17 @@
     width: 100%;
     height: 100%;
     padding-top: 10px;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .username {
     width: auto;
+    font-family: 'Oleo Script';
     font-weight: bold;
     color: darkorange;
-    font-size: 15px;
+    font-size: 18px;
     margin-left: 5px;
     text-decoration: none;
 }
@@ -106,7 +119,7 @@
 
 
 .delete {
-    position: relative;
+    /* position: relative; */
     left: 930px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -117,6 +130,9 @@
     text-decoration: none;
     cursor: pointer;
     border:none;
+    display: flex;
+    align-items: right;
+    justify-content: right;
 }
 
 .new {
@@ -196,7 +212,7 @@
 
 .cap-com {
     font-size: 20px;
-    font-family: 'Oleo Script';
+    font-family: 'oswald';
 }
 
 .show-image {
@@ -227,7 +243,7 @@
     background: -webkit-linear-gradient(black, #fdba2d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Oleo Script';
+    font-family: 'Neue Helvetica';
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
@@ -257,7 +273,24 @@
 
 .comments {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
+}
+
+.index-username{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Neue Helvetica';
+}
+
+.index-comments{
+    font-size: 18px;
+    font-family: 'Neue Helvetica';
+}
+
+.show-comments {
+    font-size: 18px;
+    font-family: 'Neue Helvetica';
+    font-weight: bold;
 }
 
