@@ -2,11 +2,11 @@
 <html lang="en">
   <%- include('partials/head.ejs', { pageName: onePost.name }) %>
   <body class="show">
-    <div class="container">
+    <div>
       <div class="row">
         <div class="col">
         </div>
-        <div class="col-9">
+        <div class="col-6">
           <%- include('partials/nav.ejs')%>
     <h1 class="profile-head"><%= onePost.username %> profile </h1>
     <div class="edit-button-show">
@@ -28,7 +28,7 @@
         <% for(let i=0;i<comments.length;i++){ %>
             <div>               
               
-                <p><%=comments[i].comment %></p>
+                <p class="show-comments">"<%=comments[i].comment %>"</p>
                 <p><%= //onePost.id%> </p>
             </div>
         <%}%>
