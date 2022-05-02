@@ -12,6 +12,7 @@ app.set("view engine", "ejs");
 /* 
     EXPRESS Middleware
 */
+
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: false }));
@@ -25,6 +26,8 @@ app.get("/", (req, res) => {
   res.redirect("/posts");
 });
 
-app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
+// app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
+
+app.listen(process.env.PORT || 4000);
 
 
