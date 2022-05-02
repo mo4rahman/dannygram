@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col">
         </div>
-        <div class="col-6">
+        <div class="col-8">
           <%- include('partials/nav.ejs')%>
     <h1 class="profile-head"><%= onePost.username %> profile </h1>
     <div class="edit-button-show">
@@ -14,8 +14,7 @@
     </div>
     <h2><%= onePost.name %></h2>
     <small><%= onePost.price %></small>
-    <img class="show-image" src="<%=onePost.image%>" alt="<%=onePost.name %>" />
-    
+    <img class="show-image" src="<%=onePost.image%>" alt="<%=onePost.name %>" />  
     <br></br>
     <section>
         <div class="comments">
@@ -35,10 +34,7 @@
     </section><br></br>
         </div>
         <div class="col">
-
         </div>
       </div>
-    
-
   </body>
 </html>
