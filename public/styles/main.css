@@ -15,8 +15,8 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .navbar {
@@ -62,7 +62,6 @@ a {
   cursor: pointer;
   margin: 0 10px;
   display: inline-block;
-
 }
 
 .main {
@@ -88,8 +87,8 @@ a {
 }
 
 .nav-text {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .post {
@@ -107,8 +106,6 @@ a {
   justify-content: space-between;
   align-items: flex-start;
 }
-
-
 
 .username {
   width: auto;
@@ -187,13 +184,12 @@ a {
 }
 
 .edit {
-  font-size: 72px;
   background: -webkit-linear-gradient(#22c1c3, #fdba2d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 100px;
   font-family: "Oleo Script", cursive;
-  font-size: 70px;
+  font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,7 +244,7 @@ a {
 }
 
 .edit-button-show {
-    /* FIXME: edit button hidden in the page */
+  /* FIXME: edit button hidden in the page */
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 10px solid;
