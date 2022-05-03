@@ -1,5 +1,4 @@
-// This is requiring in the connection that's linking to my Mongo Atlas
-// require('../config/db.connection')
+/** This file is exporting our predefined Models */
 
 module.exports = {
   Post: require("./Post"),
