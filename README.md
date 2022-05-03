@@ -1,8 +1,10 @@
 # Dannygram (Instagram Clone)
 
-[Github Link](https://github.com/mo4rahman/instagram-2.0)
+[Visit our DANNYGRAM app here!](https://polar-bastion-57023.herokuapp.com/posts)
 
-> This project will be a clone of the social media app Instagram, but strictly with Danny DeVito pictures. Here, we post photos, along with captions from a specific username. Each post will have likes and comments. The home page just consists of a feed of all the posts made by any user who uses the website.
+### Project Description
+
+- This project will be a clone of the social media app Instagram, but strictly with Danny DeVito pictures. Here, we post photos, along with captions from a specific username. Each post will have likes and comments. The home page just consists of a feed of all the posts made by any user who uses the website.
 
 ### Basic User stories
 - Like photos
@@ -12,7 +14,6 @@
 - Add/Create Post
 - Edit Post
 - Delete Post
-- Click on user to see all their posts
 
 ### Wireframes 
 ![Screen Shot 2022-04-26 at 9 12 15 AM](https://user-images.githubusercontent.com/68241119/165341231-004e3f30-b118-4ff5-a8ae-2fc9cce88d60.png)
@@ -41,7 +42,7 @@
 - have a dedicated page for a specific post
 - nav bar with home route and new post button
 
-## Stretch Goals
+## Future Implementations
 - have a page with all posts from a specific user
 - Ability to edit username and have that changed with all posts that have the same username (have to update the database as well)
 - User authentication, once authenticated, will only have the ability to edit, create, and delete if logged in to that specific username.
