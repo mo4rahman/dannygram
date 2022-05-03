@@ -8,10 +8,10 @@ const PORT = process.env.PORT || 4001;
 const methodOverride = require("method-override");
 
 app.set("view engine", "ejs");
-
 /* 
     EXPRESS Middleware
 */
+
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: false }));
