@@ -6,7 +6,7 @@
 
 - This project will be a clone of the social media app Instagram, but strictly with Danny DeVito pictures. Here, we post photos, along with captions from a specific username. Each post will have likes and comments. The home page just consists of a feed of all the posts made by any user who uses the website.
 
-### Basic User stories
+### User stories
 - Like photos
 - Comment on photos
 - Click Logo to go to home Page
