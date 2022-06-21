@@ -2,7 +2,7 @@
 
 ## Getting started
 
-[Github Link](https://polar-bastion-57023.herokuapp.com/posts)
+[Visit our DANNYGRAM app here!](https://polar-bastion-57023.herokuapp.com/posts)
 
 ### Requirements
 
