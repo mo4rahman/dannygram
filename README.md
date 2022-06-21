@@ -4,11 +4,11 @@
 
 [Visit our DANNYGRAM app here!](https://polar-bastion-57023.herokuapp.com/posts)
 
+- This project is a clone of the social media app Instagram, but strictly with Danny DeVito pictures. Here, we post photos, along with captions from a specific username. Each post will have likes and comments. The home page just consists of a feed of all the posts made by any user who uses the website.
+
 ### Requirements
 
 - Currently, our website is optimized for Chrome. There are a few bugs with the CSS for other browsers such as Safari or Mozilla Firefox.
-
-> This project is a clone of the social media app Instagram, but strictly with Danny DeVito pictures. Here, we post photos, along with captions from a specific username. Each post will have likes and comments. The home page just consists of a feed of all the posts made by any user who uses the website.
 
 ### Basic User stories
 
@@ -54,6 +54,7 @@
 - nav bar with home route and new post button
 
 ## Future Implementations
+
 - have a page with all posts from a specific user
 - Ability to edit username and have that changed with all posts that have the same username (have to update the database as well)
 - User authentication, once authenticated, will only have the ability to edit, create, and delete if logged in to that specific username.
