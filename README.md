@@ -2,7 +2,7 @@
 
 ## Getting started
 
-[Github Link](https://github.com/mo4rahman/instagram-2.0)
+[Github Link](https://polar-bastion-57023.herokuapp.com/posts)
 
 ### Requirements
 
